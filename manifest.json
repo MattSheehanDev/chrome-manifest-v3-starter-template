@@ -1,0 +1,49 @@
+{
+    "manifest_version": 3,
+    "name": "Chrome Manifest V3 Extension",
+    "version": "0.0.1",
+    "description": "Starter template for Chrome V3 Extension",
+    "permissions": [
+        "storage",
+        "tabs"
+    ],
+    "host_permissions": [],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*/*"
+            ],
+            "js": [
+                "contentScript.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "assets/*"
+            ],
+            "matches": [
+                "https://*/*"
+            ]
+        }
+    ],
+    "action": {
+        "default_icon": {
+            "16": "assets/toolbar-icon.png",
+            "24": "assets/toolbar-icon.png",
+            "32": "assets/toolbar-icon.png"
+        },
+        "default_title": "Chrome Manifest V3 Extension",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "assets/ext-icon-120x120.png",
+        "32": "assets/ext-icon-120x120.png",
+        "48": "assets/ext-icon-120x120.png",
+        "128": "assets/ext-icon-120x120.png"
+    }
+}
