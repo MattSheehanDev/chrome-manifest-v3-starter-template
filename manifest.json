@@ -3,10 +3,7 @@
     "name": "Chrome Manifest V3 Extension",
     "version": "0.0.1",
     "description": "Starter template for Chrome V3 Extension",
-    "permissions": [
-        "storage",
-        "tabs"
-    ],
+    "permissions": ["tabs"],
     "optional_permissions": [],
     "host_permissions": [],
     "background": {
